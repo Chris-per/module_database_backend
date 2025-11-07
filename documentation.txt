@@ -1,0 +1,9 @@
+https://blog.logrocket.com/build-project-using-angular-nestjs/
+
+https://dev.to/manthanank/building-a-crud-application-with-nestjs-and-mongodb-52o2
+
+
+npm run start:dev
+
+nest generate resource mongo_items
+
