@@ -37,6 +37,12 @@ export class ModuleOrderController {
   @Delete(':id')
   async remove(@Param('id') id: string) {
     console.log("removing item")
-    return this.moduleOrderService.remove(id);
+    if (id != "delete_all") {
+      await this.moduleOrderService.remove(id);
+      return { success: true, message: `Order ${id} deleted successfully.` };
+    } else {
+      await this.moduleOrderService.remove_all();
+      return { success: true, message: "All orders deleted successfully." };
+    }
   }
 }

@@ -32,10 +32,24 @@ export class ModuleOrderService {
   }
 
   async remove(id: string) {
-    const result = await this.orderModel.deleteOne({_id:id})
-    if (result.deletedCount === 0) {
-      throw new NotFoundException(`Item with ID "${id}" not found.`);
+      const result = await this.orderModel.deleteOne({_id:id})
+      
+      if (result.deletedCount === 0) {
+        throw new NotFoundException(`Item with ID "${id}" not found.`);
+      }
+      return `This action removes a #${id} mongoItem`;
     }
-    return `This action removes a #${id} mongoItem`;
-  }
+
+    async remove_all() {
+      console.log("deleting all")
+      const result = await this.orderModel.deleteMany()
+      // const result = await this.orderModel.deleteOne({_id:id})
+      if (result.deletedCount === 0) {
+          throw new NotFoundException(`nothing deleted`);
+      }
+      return `This action removes all Module mongoItems`; 
+    }
+
+
+
 }

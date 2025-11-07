@@ -13,6 +13,7 @@ export class ModuleBatchService {
 
   async create(createItemDto: CreateModuleBatchDto): Promise<ModuleBatch> {
       const createdItem = new this.orderModel(createItemDto);
+      console.log("Creating module batch:", createdItem);
       return createdItem.save();
   }
 
@@ -32,9 +33,28 @@ export class ModuleBatchService {
 
   async remove(id: string) {
     const result = await this.orderModel.deleteOne({_id:id})
+    
     if (result.deletedCount === 0) {
       throw new NotFoundException(`Item with ID "${id}" not found.`);
     }
     return `This action removes a #${id} mongoItem`;
   }
+
+  async remove_all() {
+    console.log("deleting all")
+    const result = await this.orderModel.deleteMany()
+    // const result = await this.orderModel.deleteOne({_id:id})
+    if (result.deletedCount === 0) {
+        throw new NotFoundException(`nothing deleted`);
+    }
+    return `This action removes all Module mongoItems`; 
+  }
+
+  async getBatchesForOrder(orderId: string): Promise<ModuleBatch[]> {
+    console.log(`Fetching batches for orderId: ${orderId}`);
+    return this.orderModel.find({ order_id: orderId }).exec();
+  }
+
+
+
 }

@@ -36,7 +36,18 @@ export class ModuleBatchController {
 
   @Delete(':id')
   async remove(@Param('id') id: string) {
-    console.log("removing item")
-    return this.moduleBatchService.remove(id);
+    console.log("removing item");
+    if (id != "delete_all") {
+      await this.moduleBatchService.remove(id);
+      return { success: true, message: `Batch ${id} deleted successfully.` };
+    } else {
+      await this.moduleBatchService.remove_all();
+      return { success: true, message: "All batches deleted successfully." };
+    }
+  }
+
+  @Get('order/:orderId')
+  async getBatchesForOrder(@Param('orderId') orderId: string): Promise<ModuleBatch[]> {
+    return this.moduleBatchService.getBatchesForOrder(orderId);
   }
 }
