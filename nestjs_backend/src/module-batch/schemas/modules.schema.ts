@@ -25,6 +25,58 @@ export class web_pos extends Document {
     offset: x_y
 }
 
+export class laser_settings extends Document {
+    @Prop()
+    line_type: string
+
+    @Prop()
+    power: number
+
+    @Prop()
+    speed: number
+
+    @Prop()
+    pp: number
+
+    @Prop()
+    focus: number
+}
+
+export class laser_log extends Document {
+    @Prop()
+    start_date: Date
+    
+    @Prop()
+    finish_date: Date
+
+    @Prop()
+    laser_power_start: number
+
+    @Prop()
+    laser_power_end: number
+
+    @Prop()
+    laser_power_avg: number
+
+    @Prop({ type: Number })
+    laser_power_mean_deviation: number;
+}
+export class laser_processing extends Document {
+    @Prop()
+    finished: boolean
+
+    @Prop()
+    processing_date: Date
+
+    @Prop({ type: [laser_settings] })
+    laser_settings: laser_settings[];
+
+    @Prop({ type: [laser_log] })
+    laser_log: laser_log[];
+
+
+}
+
 export class module_batch_data extends Document {
 
     @Prop()
@@ -78,21 +130,12 @@ export class ModuleBatch{
     @Prop()
     webpos: web_pos;
 
+    @Prop()
+    laser_processing?: laser_processing;
+
 
 
 }
-
-
-// export interface BatchLayout {
-//   batch_name: string;
-//   batchID?: string;
-//   batchSize: BatchSize;
-//   spacing: { x: number; y: number };
-//   fillWithModules: boolean;
-//   blueprint?: BlueprintData;
-//   items: ModuleData[];
-// }
-
 
 export const ModuleBatchSchema = SchemaFactory.createForClass(ModuleBatch);
 

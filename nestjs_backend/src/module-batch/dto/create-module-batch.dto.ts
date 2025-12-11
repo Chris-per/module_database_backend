@@ -1,4 +1,4 @@
-import { module_batch_data, web_pos } from "../schemas/modules.schema";
+import { module_batch_data, web_pos, laser_processing } from "../schemas/modules.schema";
 import * as blueprintData from '../../blueprint-data';
 import { CreateModuleDto } from "src/modules/dto/create-module.dto";
 
@@ -15,5 +15,6 @@ export class CreateModuleBatchDto {
     readonly modules?: CreateModuleDto[];
     readonly webpos?: web_pos;  
     readonly spacing?: {x: number, y: number};
+    readonly laser_processing?: laser_processing;
 }
 
