@@ -14,5 +14,6 @@ export class CreateModuleBatchDto {
     // readonly modules?: module_batch_data[];
     readonly modules?: CreateModuleDto[];
     readonly webpos?: web_pos;  
+    readonly spacing?: {x: number, y: number};
 }
 

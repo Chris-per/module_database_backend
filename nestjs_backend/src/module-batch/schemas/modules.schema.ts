@@ -64,6 +64,9 @@ export class ModuleBatch{
     origin: x_y;
 
     @Prop()
+    spacing: x_y;
+
+    @Prop()
     fillWithModules: boolean;   
 
     @Prop({type: Object})

@@ -9,6 +9,12 @@ import { ModuleOrderDocument } from './schemas/module-order.schema';
 @Injectable()
 export class ModuleOrderService {
 
+  async getIdAndNameList(): Promise<{ _id: string; name: string }[]> {
+    const orders = await this.orderModel.find({}, { _id: 1, name: 1 }).exec();
+    // Convert mongoose documents to plain objects
+    return orders.map((order: any) => ({ _id: order._id.toString(), name: order.name }));
+  }
+
   constructor(@InjectModel(ModuleOrder.name) private orderModel: Model<ModuleOrderDocument>) {}
 
 

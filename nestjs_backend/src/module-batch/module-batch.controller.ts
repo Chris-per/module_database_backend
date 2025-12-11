@@ -46,8 +46,16 @@ export class ModuleBatchController {
     }
   }
 
+  // @Get('order/:orderId')
+  // async getBatchesForOrder(@Param('orderId') orderId: string): Promise<ModuleBatch[]> {
+  //   return this.moduleBatchService.getBatchesForOrder(orderId);
+  // }
+
   @Get('order/:orderId')
   async getBatchesForOrder(@Param('orderId') orderId: string): Promise<ModuleBatch[]> {
-    return this.moduleBatchService.getBatchesForOrder(orderId);
+    console.log(`Controller: Fetching batches for orderId: ${orderId}`);
+    let orders = this.moduleBatchService.getBatchesForOrder(orderId);
+    console.log(`Controller: Retrieved batches: ${JSON.stringify(orders)}`);
+    return orders
   }
 }

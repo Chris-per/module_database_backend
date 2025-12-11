@@ -6,6 +6,11 @@ import { ModuleOrder } from './entities/module-order.entity';
 
 @Controller('module-order')
 export class ModuleOrderController {
+  @Get('get_list')
+  async getList(): Promise<{ _id: string; name: string }[]> {
+    const orders = await this.moduleOrderService.getIdAndNameList();
+    return orders;
+  }
   constructor(private readonly moduleOrderService: ModuleOrderService) {}
 
   @Put()
