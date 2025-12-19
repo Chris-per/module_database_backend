@@ -11,7 +11,7 @@ export interface BlueprintData {
  
 export interface BatchFileInfoData {
   name: string;
-  content: number[];
+  content: Uint8Array;
   jsonContent?: at.spg.protobuf.scribingdb.batchfile.IBatchDataFile;
   uploaded: string;
 }
