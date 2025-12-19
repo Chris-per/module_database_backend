@@ -16,7 +16,7 @@ export class ModuleBatchController {
 
   @Get()
   async findAll(): Promise<ModuleBatch[]> {
-    console.log("in module_order GET")
+    console.log("in module_batch GET")
     console.log("Get without id")
     return this.moduleBatchService.findAll();
   }
@@ -31,6 +31,8 @@ export class ModuleBatchController {
 
   @Patch(':id')
   async update(@Param('id') id: string, @Body() updateMongoItemDto: UpdateModuleBatchDto) {
+    console.log("updating item");
+    console.log(updateMongoItemDto);
     return this.moduleBatchService.update(id, updateMongoItemDto);
   }
 

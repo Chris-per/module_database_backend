@@ -21,14 +21,19 @@ export class ModuleBatchService {
       return this.orderModel.find().exec();
   }
 
-  async findOne(id: string) {
+  async findOne(id: string): Promise<ModuleBatch[]>  {
     return this.orderModel.find({_id:id}).exec()
 
   }
 
   async update(id: string, updateMongoItemDto: UpdateModuleBatchDto) {
-    console.log(updateMongoItemDto)
-    return this.orderModel.updateOne({_id:id}, updateMongoItemDto).exec()
+    const updated = await this.orderModel.findByIdAndUpdate(
+      id,
+      updateMongoItemDto,
+      { new: true, runValidators: true }
+    ).exec();
+    console.log('Updated object:', updated);
+    return updated;
   }
 
   async remove(id: string) {

@@ -50,6 +50,9 @@ export class laser_log extends Document {
     finish_date: Date
 
     @Prop()
+    line_type: string
+
+    @Prop()
     laser_power_start: number
 
     @Prop()
