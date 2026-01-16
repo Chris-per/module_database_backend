@@ -16,5 +16,6 @@ export class CreateModuleBatchDto {
     readonly webpos?: web_pos;  
     readonly spacing?: {x: number, y: number};
     readonly laser_processing?: laser_processing;
+    readonly qr_data?: {x: number, y: number};
 }
 

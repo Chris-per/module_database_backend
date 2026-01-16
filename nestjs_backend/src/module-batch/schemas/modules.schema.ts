@@ -136,6 +136,9 @@ export class ModuleBatch{
     @Prop()
     laser_processing?: laser_processing;
 
+    @Prop()
+    qr_data?: x_y;
+
 
 
 }
