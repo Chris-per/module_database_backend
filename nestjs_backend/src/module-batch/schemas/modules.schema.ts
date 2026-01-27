@@ -80,6 +80,23 @@ export class laser_processing extends Document {
 
 }
 
+export class dielectric_print_job extends Document {
+    @Prop()
+    jobId: string;
+
+    @Prop()
+    timestamp: Date;
+
+    @Prop()
+    successful: boolean;
+
+    @Prop()
+    error: string;
+
+    @Prop({ type: String })
+    log: string;
+}
+
 export class module_batch_data extends Document {
 
     @Prop()
@@ -135,6 +152,9 @@ export class ModuleBatch{
 
     @Prop()
     laser_processing?: laser_processing;
+
+    @Prop({ default: [] })
+    dielectric_print_job?: dielectric_print_job;
 
     @Prop()
     qr_data?: x_y;
