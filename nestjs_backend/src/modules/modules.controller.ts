@@ -31,12 +31,9 @@ export class ModulesController {
     return this.modulesService.findAll();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: string){
-    console.log("in module_order GET ${id}")
-    console.log("got an id ${id}")
-    
-    return this.modulesService.findOne(id);
+  @Get('order/:orderId/process-data')
+  async getProcessDataForOrder(@Param('orderId') orderId: string) {
+    return this.modulesService.getProcessDataForOrder(orderId);
   }
 
   @Get('order/:orderId')
@@ -49,24 +46,20 @@ export class ModulesController {
     return this.modulesService.findByBatchId(batchId);
   }
 
-  @Patch(':id')
-  async update(@Param('id') id: string, @Body() updateMongoItemDto: UpdateModuleDto) {
-    console.log("in module_order PATCH")
-    console.log("updateMongoItemDto")
-    console.log(updateMongoItemDto)   
-    return this.modulesService.update(id, updateMongoItemDto);
+  @Get(':id')
+  async findOne(@Param('id') id: string){
+    console.log("in module_order GET ${id}")
+    console.log("got an id ${id}")
+    
+    return this.modulesService.findOne(id);
   }
 
-  @Delete(':id')
-  async remove(@Param('id') id: string) {
-    console.log("removing item")
-    if(id!= "delete_all") {
-      return this.modulesService.remove(id);
-    }
-    else
-    {
-      return this.modulesService.remove_all();
-    }
+  @Post('order/:orderId/remove-process-data')
+  async removeProcessDataFromOrder(
+    @Param('orderId') orderId: string,
+    @Body() body: { removeIndices: { moduleId: string, index: number }[] }
+  ) {
+    return this.modulesService.removeProcessDataFromModules(orderId, body.removeIndices);
   }
 
   @Post(':id/add_iv_data')
@@ -84,6 +77,29 @@ export class ModulesController {
     ) {
         return this.modulesService.insertProcessData(id, processData);
     }
+
+  @Patch(':id')
+  async update(@Param('id') id: string, @Body() updateMongoItemDto: UpdateModuleDto) {
+    console.log("in module_order PATCH")
+    console.log("updateMongoItemDto")
+    console.log(updateMongoItemDto)   
+    return this.modulesService.update(id, updateMongoItemDto);
+  }
+
+  @Delete(':id')
+  async remove(@Param('id') id: string) {
+    console.log("removing item")
+    if(id!= "delete_all") {
+      console.log("removing item with id:", id)
+      await this.modulesService.remove(id);
+      return { success: true, message: `Module ${id} deleted successfully.` };
+    }
+    else
+    {
+      await this.modulesService.remove_all();
+      return { success: true, message: "All modules deleted successfully." };
+    }
+  }
 
 
 

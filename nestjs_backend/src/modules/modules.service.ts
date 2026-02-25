@@ -92,4 +92,54 @@ export class ModulesService {
     async findByBatchId(batchId: string): Promise<Modules[]> {
       return this.orderModel.find({ batch_id: batchId }).exec();
     }
+
+    async getProcessDataForOrder(orderId: string): Promise<any[]> {
+      const modules = await this.orderModel.find({ order_id: orderId }).exec();
+      const processDataList: any[] = [];
+      
+      modules.forEach(module => {
+        if (module.process_data_list && module.process_data_list.length > 0) {
+          module.process_data_list.forEach((pd, index) => {
+            processDataList.push({
+              moduleId: module._id,
+              moduleName: module.name,
+              processDataIndex: index,
+              date: pd.date,
+              machine: pd.machine,
+              finished: pd.finished,
+              notes: pd.notes,
+              settings: pd.settings
+            });
+          });
+        }
+      });
+      
+      return processDataList;
+    }
+
+    async removeProcessDataFromModules(orderId: string, removeIndices: { moduleId: string, index: number }[]) {
+      const results: { moduleId: string, success: boolean, message: string }[] = [];
+      
+      for (const item of removeIndices) {
+        const module = await this.orderModel.findById(item.moduleId);
+        
+        if (!module) {
+          results.push({ moduleId: item.moduleId, success: false, message: 'Module not found' });
+          continue;
+        }
+        
+        if (!module.process_data_list || item.index >= module.process_data_list.length) {
+          results.push({ moduleId: item.moduleId, success: false, message: 'Process data index out of range' });
+          continue;
+        }
+        
+        // Remove the process data at the specified index
+        module.process_data_list.splice(item.index, 1);
+        await module.save();
+        
+        results.push({ moduleId: item.moduleId, success: true, message: 'Process data removed' });
+      }
+      
+      return results;
+    }
 }
