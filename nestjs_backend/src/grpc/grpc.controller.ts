@@ -1,6 +1,6 @@
 import { Controller, Post, Body, Get, ConfigurableModuleBuilder } from '@nestjs/common';
 import { GrpcClientService } from './grpc-client.service';
-import { GcodeEnum, type Gcode, type GcodeLine, type StartDispensingMessage, type RequestStatusMessage, type StopDispensingMessage, type RequestReferenceMessage } from './dispenser.interface';
+import { GcodeEnum, type Gcode, type GcodeLine, type CoordinatePair, type StartDispensingMessage, type RequestStatusMessage, type StopDispensingMessage, type RequestReferenceMessage } from './dispenser.interface';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -81,7 +81,21 @@ export class GrpcController {
                 if (value.includes(':')) {
                     gcodeLine.data = value.split(':').map(v => parseFloat(v));
                 } else {
-                    gcodeLine.pattern = value;
+                    // M310 coordinate format: P<n>X<val> or P<n>Y<val>
+                    const coordMatch = value.match(/^(\d+)([XY])([\d.]+)$/);
+                    if (coordMatch) {
+                        const idx = parseInt(coordMatch[1], 10) - 1;
+                        const axis = coordMatch[2];
+                        const val = parseFloat(coordMatch[3]);
+                        if (!gcodeLine.coordinates) gcodeLine.coordinates = [];
+                        while (gcodeLine.coordinates.length <= idx) {
+                            gcodeLine.coordinates.push({ x: 0, y: 0 } as CoordinatePair);
+                        }
+                        if (axis === 'X') gcodeLine.coordinates[idx].x = val;
+                        else gcodeLine.coordinates[idx].y = val;
+                    } else {
+                        gcodeLine.pattern = value;
+                    }
                 }
                 break;
         }

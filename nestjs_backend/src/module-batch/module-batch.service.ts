@@ -103,6 +103,10 @@ export class ModuleBatchService {
     return this.orderModel.find({ order_id: orderId }).exec();
   }
 
+  async findByCustomBatchId(batchId: string): Promise<ModuleBatch[]> {
+    return this.orderModel.find({ batch_id: batchId }).exec();
+  }
+
 
 
 }

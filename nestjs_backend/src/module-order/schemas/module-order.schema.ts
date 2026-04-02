@@ -93,6 +93,9 @@ export class ModuleOrder {
   @Prop()
   batchfile: string;
 
+  @Prop()
+  svgProjectId: string;
+
   @Prop({ default: 0 })
   amount: number;
 

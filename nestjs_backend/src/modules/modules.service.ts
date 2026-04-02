@@ -93,6 +93,10 @@ export class ModulesService {
       return this.orderModel.find({ batch_id: batchId }).exec();
     }
 
+    async findByCustomModuleId(moduleId: string): Promise<Modules[]> {
+      return this.orderModel.find({ module_id: moduleId }).exec();
+    }
+
     async getProcessDataForOrder(orderId: string): Promise<any[]> {
       const modules = await this.orderModel.find({ order_id: orderId }).exec();
       const processDataList: any[] = [];

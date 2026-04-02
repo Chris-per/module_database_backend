@@ -21,6 +21,12 @@ export enum GcodeEnum {
   G00 = 12,
   M06 = 13,
   M200 = 19,
+  M310 = 20,
+}
+
+export interface CoordinatePair {
+  x: number;
+  y: number;
 }
 
 export interface GcodeLine {
@@ -39,6 +45,7 @@ export interface GcodeLine {
   fiducial?: string;
   data?: number[];
   Q?: string;
+  coordinates?: CoordinatePair[];
 }
 
 export interface Gcode {

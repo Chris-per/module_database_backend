@@ -1,4 +1,3 @@
-version: '3.5'
 
 services:
   mongodb-backend:
@@ -18,4 +17,5 @@ services:
     volumes:
       - ./src:/app/src
       - ../../frontend:/frontend
+      - ./svg-editor-projects:/app/svg-editor-projects
 

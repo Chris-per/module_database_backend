@@ -46,6 +46,11 @@ export class ModulesController {
     return this.modulesService.findByBatchId(batchId);
   }
 
+  @Get('by-module-id/:moduleId')
+  async getByCustomModuleId(@Param('moduleId') moduleId: string): Promise<Modules[]> {
+    return this.modulesService.findByCustomModuleId(moduleId);
+  }
+
   @Get(':id')
   async findOne(@Param('id') id: string){
     console.log("in module_order GET ${id}")

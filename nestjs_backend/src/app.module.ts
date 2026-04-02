@@ -6,13 +6,14 @@ import { ModuleOrderModule } from './module-order/module-order.module';
 import { ModuleBatchModule } from './module-batch/module-batch.module';
 import { ModulesModule } from './modules/modules.module';
 import { GrpcClientModule } from './grpc/grpc-client.module';
+import { SvgProjectsModule } from './svg-projects/svg-projects.module';
 
 
 
 @Module({
   // imports: [MongooseModule.forRoot("mongodb://admin:password@192.168.178.143:27017"), MongoItemsModule, ModuleOrderModule],
-  imports: [MongooseModule.forRoot("mongodb://sunplugged:sunplugged@192.168.178.143:27017/moduleorders"), ModuleOrderModule, ModuleBatchModule, ModulesModule, GrpcClientModule],
-  
+  imports: [MongooseModule.forRoot("mongodb://sunplugged:sunplugged@192.168.178.143:27017/moduleorders"), ModuleOrderModule, ModuleBatchModule, ModulesModule, GrpcClientModule, SvgProjectsModule],
+
   controllers: [AppController],
   providers: [AppService],
 })

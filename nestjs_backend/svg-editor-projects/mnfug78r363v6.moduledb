@@ -1,0 +1,5985 @@
+{
+  "version": 1,
+  "meta": {
+    "savedAt": "2026-04-01T11:17:05.689Z",
+    "name": "ET_Compact_v2_ownCIGS"
+  },
+  "workspace": {
+    "canvas": {
+      "width": 150,
+      "height": 100,
+      "gridSpacing": 10,
+      "snapToGrid": false
+    },
+    "pan": {
+      "x": 41.925715374365595,
+      "y": -46.26307918146929
+    },
+    "zoom": 1.74900625,
+    "shapes": [
+      {
+        "id": "rect-1775035387105",
+        "label": "Rect 25×50 mm",
+        "vertices": [
+          {
+            "x": 10,
+            "y": 10
+          },
+          {
+            "x": 35,
+            "y": 10
+          },
+          {
+            "x": 35,
+            "y": 60
+          },
+          {
+            "x": 10,
+            "y": 60
+          }
+        ],
+        "color": "#1976d2"
+      }
+    ],
+    "contactPoints": [
+      {
+        "x": 31,
+        "y": 14,
+        "type": "positive"
+      },
+      {
+        "x": 14,
+        "y": 56,
+        "type": "negative"
+      }
+    ],
+    "guidingEdges": {
+      "positive": {
+        "shapeId": "rect-1775035387105",
+        "edgeIdx": 0
+      },
+      "negative": {
+        "shapeId": "rect-1775035387105",
+        "edgeIdx": 2
+      }
+    }
+  },
+  "options": {
+    "contactSize": 4,
+    "contactP1Offset": 0.5,
+    "dividingLineDistance": 3.1,
+    "deadZone": 1,
+    "monoP1P2Distance": 0.2,
+    "monoP1P3Distance": 0.55,
+    "monoP2Overlap": 1,
+    "monoP1P3Overlap": 0.5,
+    "p10Count": 4,
+    "p10Spacing": 0.03,
+    "p11Enabled": true,
+    "p11Count": 2,
+    "p11Spacing": 0.03,
+    "p20Count": 4,
+    "p20Spacing": 0.03,
+    "silverWidth": 0.3,
+    "silverP3Gap": 0.46,
+    "silverFingerGap": 1.5,
+    "silverFingerDist": 5,
+    "contactAreaSpacing": 1,
+    "nCell": 8,
+    "stdEfficiency": 11.5,
+    "textSizeMultiplier": 1,
+    "lineWidthMultiplier": 0.1,
+    "gridLineWidthMultiplier": 0.3,
+    "showLengthLabels": true
+  },
+  "display": {
+    "mode": "draw",
+    "showLayer": {
+      "p60": true,
+      "p1": true,
+      "dielectric": true,
+      "p2": true,
+      "p3": true,
+      "silver": true,
+      "activeArea": true,
+      "pads": true
+    },
+    "lineTypes": {
+      "p1": {
+        "label": "P1",
+        "lineWidth": 0.08,
+        "color": "#e65100"
+      },
+      "dielectric": {
+        "label": "Dielectric",
+        "lineWidth": 0.15,
+        "color": "#1565c0"
+      },
+      "p2": {
+        "label": "P2",
+        "lineWidth": 0.08,
+        "color": "#6a1fa2"
+      },
+      "p3": {
+        "label": "P3",
+        "lineWidth": 0.08,
+        "color": "#0097a7"
+      },
+      "p60": {
+        "label": "P60 (cut)",
+        "lineWidth": 0.15,
+        "color": "#d32f2f"
+      },
+      "silver": {
+        "label": "Silver",
+        "lineWidth": 0.4,
+        "color": "#9e9e9e"
+      }
+    }
+  },
+  "assets": {
+    "uploadedSvg": null
+  },
+  "scribingObjects": [
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.9
+        },
+        {
+          "x": 16.5,
+          "y": 55.9
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-0",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.5,
+          "y": 55.9
+        },
+        {
+          "x": 10.5,
+          "y": 55.9
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-1",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 55.699999999999996
+        },
+        {
+          "x": 12,
+          "y": 55.699999999999996
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-2",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 55.669999999999995
+        },
+        {
+          "x": 12,
+          "y": 55.669999999999995
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-3",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 55.63999999999999
+        },
+        {
+          "x": 12,
+          "y": 55.63999999999999
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-4",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 55.60999999999999
+        },
+        {
+          "x": 12,
+          "y": 55.60999999999999
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-5",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.305
+        },
+        {
+          "x": 10.5,
+          "y": 55.305
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-6",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.335
+        },
+        {
+          "x": 10.5,
+          "y": 55.335
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-7",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.365
+        },
+        {
+          "x": 10.5,
+          "y": 55.365
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-8",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.395
+        },
+        {
+          "x": 10.5,
+          "y": 55.395
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-9",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.35
+        },
+        {
+          "x": 10.5,
+          "y": 55.35
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-10",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.335
+        },
+        {
+          "x": 10.5,
+          "y": 55.335
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-11",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 55.365
+        },
+        {
+          "x": 10.5,
+          "y": 55.365
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-12",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 50.28369565218759
+        },
+        {
+          "x": 10.5,
+          "y": 50.28369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-13",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 50.083695652187586
+        },
+        {
+          "x": 12,
+          "y": 50.083695652187586
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-14",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 50.053695652187585
+        },
+        {
+          "x": 12,
+          "y": 50.053695652187585
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-15",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 50.023695652187584
+        },
+        {
+          "x": 12,
+          "y": 50.023695652187584
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-16",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 49.99369565218758
+        },
+        {
+          "x": 12,
+          "y": 49.99369565218758
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-17",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.68869565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.68869565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-18",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.71869565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.71869565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-19",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.74869565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.74869565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-20",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.778695652187594
+        },
+        {
+          "x": 10.5,
+          "y": 49.778695652187594
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-21",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.73369565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.73369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-22",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.71869565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.71869565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-23",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 49.74869565218759
+        },
+        {
+          "x": 10.5,
+          "y": 49.74869565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-24",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 45.18913043479172
+        },
+        {
+          "x": 10.5,
+          "y": 45.18913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-25",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 44.98913043479172
+        },
+        {
+          "x": 12,
+          "y": 44.98913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-26",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 44.95913043479172
+        },
+        {
+          "x": 12,
+          "y": 44.95913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-27",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 44.929130434791716
+        },
+        {
+          "x": 12,
+          "y": 44.929130434791716
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-28",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 44.899130434791715
+        },
+        {
+          "x": 12,
+          "y": 44.899130434791715
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-29",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.59413043479172
+        },
+        {
+          "x": 10.5,
+          "y": 44.59413043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-30",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.624130434791724
+        },
+        {
+          "x": 10.5,
+          "y": 44.624130434791724
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-31",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.654130434791725
+        },
+        {
+          "x": 10.5,
+          "y": 44.654130434791725
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-32",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.684130434791726
+        },
+        {
+          "x": 10.5,
+          "y": 44.684130434791726
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-33",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.639130434791724
+        },
+        {
+          "x": 10.5,
+          "y": 44.639130434791724
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-34",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.624130434791724
+        },
+        {
+          "x": 10.5,
+          "y": 44.624130434791724
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-35",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 44.654130434791725
+        },
+        {
+          "x": 10.5,
+          "y": 44.654130434791725
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-36",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 40.09456521739587
+        },
+        {
+          "x": 10.5,
+          "y": 40.09456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-37",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 39.894565217395865
+        },
+        {
+          "x": 12,
+          "y": 39.894565217395865
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-38",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 39.864565217395864
+        },
+        {
+          "x": 12,
+          "y": 39.864565217395864
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-39",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 39.83456521739586
+        },
+        {
+          "x": 12,
+          "y": 39.83456521739586
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-40",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 39.80456521739586
+        },
+        {
+          "x": 12,
+          "y": 39.80456521739586
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-41",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.49956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.49956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-42",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.52956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.52956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-43",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.55956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.55956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-44",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.58956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.58956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-45",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.54456521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.54456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-46",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.52956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.52956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-47",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 39.55956521739587
+        },
+        {
+          "x": 10.5,
+          "y": 39.55956521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-48",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 35
+        },
+        {
+          "x": 10.5,
+          "y": 35
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-49",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 34.8
+        },
+        {
+          "x": 12,
+          "y": 34.8
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-50",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 34.769999999999996
+        },
+        {
+          "x": 12,
+          "y": 34.769999999999996
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-51",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 34.739999999999995
+        },
+        {
+          "x": 12,
+          "y": 34.739999999999995
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-52",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 34.709999999999994
+        },
+        {
+          "x": 12,
+          "y": 34.709999999999994
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-53",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.405
+        },
+        {
+          "x": 10.5,
+          "y": 34.405
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-54",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.435
+        },
+        {
+          "x": 10.5,
+          "y": 34.435
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-55",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.465
+        },
+        {
+          "x": 10.5,
+          "y": 34.465
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-56",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.495000000000005
+        },
+        {
+          "x": 10.5,
+          "y": 34.495000000000005
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-57",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.45
+        },
+        {
+          "x": 10.5,
+          "y": 34.45
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-58",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.435
+        },
+        {
+          "x": 10.5,
+          "y": 34.435
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-59",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 34.465
+        },
+        {
+          "x": 10.5,
+          "y": 34.465
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-60",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.90543478260414
+        },
+        {
+          "x": 10.5,
+          "y": 29.90543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-61",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 29.70543478260414
+        },
+        {
+          "x": 12,
+          "y": 29.705434782604137
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-62",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 29.67543478260414
+        },
+        {
+          "x": 12,
+          "y": 29.675434782604135
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-63",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 29.64543478260414
+        },
+        {
+          "x": 12,
+          "y": 29.64543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-64",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 29.61543478260414
+        },
+        {
+          "x": 12,
+          "y": 29.61543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-65",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.310434782604137
+        },
+        {
+          "x": 10.5,
+          "y": 29.31043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-66",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.340434782604138
+        },
+        {
+          "x": 10.5,
+          "y": 29.34043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-67",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.37043478260414
+        },
+        {
+          "x": 10.5,
+          "y": 29.37043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-68",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.40043478260414
+        },
+        {
+          "x": 10.5,
+          "y": 29.40043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-69",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.35543478260414
+        },
+        {
+          "x": 10.5,
+          "y": 29.35543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-70",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.340434782604138
+        },
+        {
+          "x": 10.5,
+          "y": 29.34043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-71",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 29.37043478260414
+        },
+        {
+          "x": 10.5,
+          "y": 29.37043478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-72",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.810869565208286
+        },
+        {
+          "x": 10.5,
+          "y": 24.810869565208286
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-73",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 24.610869565208287
+        },
+        {
+          "x": 12,
+          "y": 24.61086956520829
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-74",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 24.580869565208282
+        },
+        {
+          "x": 12,
+          "y": 24.58086956520829
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-75",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 24.550869565208288
+        },
+        {
+          "x": 12,
+          "y": 24.550869565208288
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-76",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 24.520869565208287
+        },
+        {
+          "x": 12,
+          "y": 24.520869565208287
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-77",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.215869565208283
+        },
+        {
+          "x": 10.5,
+          "y": 24.21586956520828
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-78",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.245869565208285
+        },
+        {
+          "x": 10.5,
+          "y": 24.24586956520828
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-79",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.275869565208282
+        },
+        {
+          "x": 10.5,
+          "y": 24.275869565208282
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-80",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.305869565208287
+        },
+        {
+          "x": 10.5,
+          "y": 24.305869565208283
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-81",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.26086956520828
+        },
+        {
+          "x": 10.5,
+          "y": 24.26086956520828
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-82",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.245869565208285
+        },
+        {
+          "x": 10.5,
+          "y": 24.24586956520828
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-83",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 24.275869565208282
+        },
+        {
+          "x": 10.5,
+          "y": 24.275869565208282
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-84",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.716304347812432
+        },
+        {
+          "x": 10.5,
+          "y": 19.716304347812432
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-85",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 19.516304347812433
+        },
+        {
+          "x": 12,
+          "y": 19.516304347812437
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-86",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 19.486304347812432
+        },
+        {
+          "x": 12,
+          "y": 19.486304347812435
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-87",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 19.456304347812434
+        },
+        {
+          "x": 12,
+          "y": 19.456304347812434
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-88",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 19.426304347812433
+        },
+        {
+          "x": 12,
+          "y": 19.426304347812433
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p20-89",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p20"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.12130434781243
+        },
+        {
+          "x": 10.5,
+          "y": 19.121304347812426
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-90",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.15130434781243
+        },
+        {
+          "x": 10.5,
+          "y": 19.151304347812427
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-91",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.181304347812432
+        },
+        {
+          "x": 10.5,
+          "y": 19.18130434781243
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-92",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.211304347812433
+        },
+        {
+          "x": 10.5,
+          "y": 19.21130434781243
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p10-93",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p10"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.16630434781243
+        },
+        {
+          "x": 10.5,
+          "y": 19.166304347812428
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-94",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.15130434781243
+        },
+        {
+          "x": 10.5,
+          "y": 19.151304347812427
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-95",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.5,
+          "y": 19.181304347812432
+        },
+        {
+          "x": 10.5,
+          "y": 19.18130434781243
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p11-96",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p11"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.5,
+          "y": 14.100000000000001
+        },
+        {
+          "x": 28.5,
+          "y": 14.1
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-97",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.5,
+          "y": 14.1
+        },
+        {
+          "x": 34.5,
+          "y": 14.1
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p3-98",
+        "parentId": "",
+        "color": "#0097a7",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 30
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14,
+          "y": 58.5
+        },
+        {
+          "x": 14,
+          "y": 56
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-99",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 57.5
+        },
+        {
+          "x": 16.5,
+          "y": 57.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-p2-100",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "ca-p2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 57.5
+        },
+        {
+          "x": 12,
+          "y": 57.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-101",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14,
+          "y": 57.5
+        },
+        {
+          "x": 14,
+          "y": 56
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-102",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 56.5
+        },
+        {
+          "x": 16.5,
+          "y": 56.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-p2-103",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "ca-p2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 56.5
+        },
+        {
+          "x": 12,
+          "y": 56.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-104",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14,
+          "y": 56.5
+        },
+        {
+          "x": 14,
+          "y": 56
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-105",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 31,
+          "y": 11.5
+        },
+        {
+          "x": 31,
+          "y": 14
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-106",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 12.5
+        },
+        {
+          "x": 28.5,
+          "y": 12.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-p2-107",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "ca-p2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 12.5
+        },
+        {
+          "x": 33,
+          "y": 12.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-108",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 31,
+          "y": 12.5
+        },
+        {
+          "x": 31,
+          "y": 14
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-109",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 13.5
+        },
+        {
+          "x": 28.5,
+          "y": 13.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-p2-110",
+        "parentId": "",
+        "color": "#6a1fa2",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "ca-p2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 20
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 13.5
+        },
+        {
+          "x": 33,
+          "y": 13.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-111",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 31,
+          "y": 13.5
+        },
+        {
+          "x": 31,
+          "y": 14
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-ca-silver-112",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "ca-silver"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 55.44
+        },
+        {
+          "x": 12,
+          "y": 55.44
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-113",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 55.44
+        },
+        {
+          "x": 30.375,
+          "y": 51.78369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-114",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 55.44
+        },
+        {
+          "x": 25.125,
+          "y": 51.78369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-115",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 55.44
+        },
+        {
+          "x": 19.875,
+          "y": 51.78369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-116",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 49.82369565218759
+        },
+        {
+          "x": 12,
+          "y": 49.82369565218759
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-117",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 49.82369565218759
+        },
+        {
+          "x": 30.375,
+          "y": 46.68913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-118",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 49.82369565218759
+        },
+        {
+          "x": 25.125,
+          "y": 46.68913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-119",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 49.82369565218759
+        },
+        {
+          "x": 19.875,
+          "y": 46.68913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-120",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 49.82369565218759
+        },
+        {
+          "x": 14.625,
+          "y": 46.68913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-121",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 44.72913043479172
+        },
+        {
+          "x": 12,
+          "y": 44.72913043479172
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-122",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 44.72913043479172
+        },
+        {
+          "x": 30.375,
+          "y": 41.59456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-123",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 44.72913043479172
+        },
+        {
+          "x": 25.125,
+          "y": 41.59456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-124",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 44.72913043479172
+        },
+        {
+          "x": 19.875,
+          "y": 41.59456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-125",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 44.72913043479172
+        },
+        {
+          "x": 14.625,
+          "y": 41.59456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-126",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 39.63456521739587
+        },
+        {
+          "x": 12,
+          "y": 39.63456521739587
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-127",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 39.63456521739587
+        },
+        {
+          "x": 30.375,
+          "y": 36.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-128",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 39.63456521739587
+        },
+        {
+          "x": 25.125,
+          "y": 36.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-129",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 39.63456521739587
+        },
+        {
+          "x": 19.875,
+          "y": 36.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-130",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 39.63456521739587
+        },
+        {
+          "x": 14.625,
+          "y": 36.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-131",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 34.54
+        },
+        {
+          "x": 12,
+          "y": 34.54
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-132",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 34.54
+        },
+        {
+          "x": 30.375,
+          "y": 31.40543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-133",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 34.54
+        },
+        {
+          "x": 25.125,
+          "y": 31.40543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-134",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 34.54
+        },
+        {
+          "x": 19.875,
+          "y": 31.40543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-135",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 34.54
+        },
+        {
+          "x": 14.625,
+          "y": 31.40543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-136",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 29.44543478260414
+        },
+        {
+          "x": 12,
+          "y": 29.44543478260414
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-137",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 29.44543478260414
+        },
+        {
+          "x": 30.375,
+          "y": 26.310869565208286
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-138",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 29.44543478260414
+        },
+        {
+          "x": 25.125,
+          "y": 26.310869565208286
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-139",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 29.44543478260414
+        },
+        {
+          "x": 19.875,
+          "y": 26.310869565208286
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-140",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 29.44543478260414
+        },
+        {
+          "x": 14.625,
+          "y": 26.310869565208286
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-141",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 24.350869565208285
+        },
+        {
+          "x": 12,
+          "y": 24.350869565208285
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-142",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 24.350869565208285
+        },
+        {
+          "x": 30.375,
+          "y": 21.216304347812432
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-143",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 24.350869565208285
+        },
+        {
+          "x": 25.125,
+          "y": 21.216304347812432
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-144",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 24.350869565208285
+        },
+        {
+          "x": 19.875,
+          "y": 21.216304347812432
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-145",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 24.350869565208285
+        },
+        {
+          "x": 14.625,
+          "y": 21.216304347812432
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-146",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 33,
+          "y": 19.25630434781243
+        },
+        {
+          "x": 12,
+          "y": 19.25630434781243
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-line-147",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-line"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 30.375,
+          "y": 19.25630434781243
+        },
+        {
+          "x": 30.375,
+          "y": 18
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-148",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 25.125,
+          "y": 19.25630434781243
+        },
+        {
+          "x": 25.125,
+          "y": 15.6
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-149",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 19.875,
+          "y": 19.25630434781243
+        },
+        {
+          "x": 19.875,
+          "y": 15.6
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-150",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_SILVERINK",
+      "vertices": [
+        {
+          "x": 14.625,
+          "y": 19.25630434781243
+        },
+        {
+          "x": 14.625,
+          "y": 15.6
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-silver-finger-151",
+        "parentId": "",
+        "color": "#9e9e9e",
+        "width": 0.4,
+        "fillColor": "",
+        "label": "silver-finger"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 1
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.955,
+          "y": 11.045
+        },
+        {
+          "x": 33.955,
+          "y": 58.955
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e0-152",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.955,
+          "y": 58.955
+        },
+        {
+          "x": 11.045,
+          "y": 58.955
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e1-153",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.045,
+          "y": 58.955
+        },
+        {
+          "x": 11.045,
+          "y": 11.045
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e2-154",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.045,
+          "y": 11.045
+        },
+        {
+          "x": 33.955,
+          "y": 11.045
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e3-155",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.985,
+          "y": 11.015
+        },
+        {
+          "x": 33.985,
+          "y": 58.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e0-156",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.985,
+          "y": 58.985
+        },
+        {
+          "x": 11.015,
+          "y": 58.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e1-157",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.015,
+          "y": 58.985
+        },
+        {
+          "x": 11.015,
+          "y": 11.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e2-158",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.015,
+          "y": 11.015
+        },
+        {
+          "x": 33.985,
+          "y": 11.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e3-159",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.015,
+          "y": 10.985
+        },
+        {
+          "x": 34.015,
+          "y": 59.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-2-e0-160",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-2-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.015,
+          "y": 59.015
+        },
+        {
+          "x": 10.985,
+          "y": 59.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-2-e1-161",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-2-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.985,
+          "y": 59.015
+        },
+        {
+          "x": 10.985,
+          "y": 10.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-2-e2-162",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-2-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.985,
+          "y": 10.985
+        },
+        {
+          "x": 34.015,
+          "y": 10.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-2-e3-163",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-2-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.045,
+          "y": 10.955
+        },
+        {
+          "x": 34.045,
+          "y": 59.045
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-3-e0-164",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-3-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.045,
+          "y": 59.045
+        },
+        {
+          "x": 10.955,
+          "y": 59.045
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-3-e1-165",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-3-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.955,
+          "y": 59.045
+        },
+        {
+          "x": 10.955,
+          "y": 10.955
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-3-e2-166",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-3-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.955,
+          "y": 10.955
+        },
+        {
+          "x": 34.045,
+          "y": 10.955
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-3-e3-167",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-3-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.985,
+          "y": 11.015
+        },
+        {
+          "x": 33.985,
+          "y": 58.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e0-168",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.985,
+          "y": 58.985
+        },
+        {
+          "x": 11.015,
+          "y": 58.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e1-169",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.015,
+          "y": 58.985
+        },
+        {
+          "x": 11.015,
+          "y": 11.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e2-170",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.015,
+          "y": 11.015
+        },
+        {
+          "x": 33.985,
+          "y": 11.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e3-171",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.015,
+          "y": 10.985
+        },
+        {
+          "x": 34.015,
+          "y": 59.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e0-172",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 34.015,
+          "y": 59.015
+        },
+        {
+          "x": 10.985,
+          "y": 59.015
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e1-173",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.985,
+          "y": 59.015
+        },
+        {
+          "x": 10.985,
+          "y": 10.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e2-174",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10.985,
+          "y": 10.985
+        },
+        {
+          "x": 34.015,
+          "y": 10.985
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-1-e3-175",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-1-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34,
+          "y": 11
+        },
+        {
+          "x": 34,
+          "y": 59
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e0-176",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e0"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 34,
+          "y": 59
+        },
+        {
+          "x": 11,
+          "y": 59
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e1-177",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e1"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 11,
+          "y": 59
+        },
+        {
+          "x": 11,
+          "y": 11
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e2-178",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e2"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 11,
+          "y": 11
+        },
+        {
+          "x": 34,
+          "y": 11
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e3-179",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e3"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.455,
+          "y": 11.455
+        },
+        {
+          "x": 33.545,
+          "y": 11.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-180",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.545,
+          "y": 11.455
+        },
+        {
+          "x": 33.545,
+          "y": 16.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-181",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.545,
+          "y": 16.545
+        },
+        {
+          "x": 28.455,
+          "y": 16.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-182",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.455,
+          "y": 16.545
+        },
+        {
+          "x": 28.455,
+          "y": 11.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-183",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.485,
+          "y": 11.485
+        },
+        {
+          "x": 33.515,
+          "y": 11.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-184",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.515,
+          "y": 11.485
+        },
+        {
+          "x": 33.515,
+          "y": 16.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-185",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.515,
+          "y": 16.515
+        },
+        {
+          "x": 28.485,
+          "y": 16.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-186",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.485,
+          "y": 16.515
+        },
+        {
+          "x": 28.485,
+          "y": 11.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-187",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.515,
+          "y": 11.515
+        },
+        {
+          "x": 33.485,
+          "y": 11.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-188",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.485,
+          "y": 11.515
+        },
+        {
+          "x": 33.485,
+          "y": 16.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-189",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.485,
+          "y": 16.485
+        },
+        {
+          "x": 28.515,
+          "y": 16.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-190",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.515,
+          "y": 16.485
+        },
+        {
+          "x": 28.515,
+          "y": 11.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-191",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.545,
+          "y": 11.545
+        },
+        {
+          "x": 33.455,
+          "y": 11.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-192",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.455,
+          "y": 11.545
+        },
+        {
+          "x": 33.455,
+          "y": 16.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-193",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.455,
+          "y": 16.455
+        },
+        {
+          "x": 28.545,
+          "y": 16.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-194",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.545,
+          "y": 16.455
+        },
+        {
+          "x": 28.545,
+          "y": 11.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-195",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.485,
+          "y": 11.485
+        },
+        {
+          "x": 33.515,
+          "y": 11.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-196",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.515,
+          "y": 11.485
+        },
+        {
+          "x": 33.515,
+          "y": 16.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-197",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.515,
+          "y": 16.515
+        },
+        {
+          "x": 28.485,
+          "y": 16.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-198",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.485,
+          "y": 16.515
+        },
+        {
+          "x": 28.485,
+          "y": 11.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-199",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.515,
+          "y": 11.515
+        },
+        {
+          "x": 33.485,
+          "y": 11.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e0-200",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.485,
+          "y": 11.515
+        },
+        {
+          "x": 33.485,
+          "y": 16.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e1-201",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 33.485,
+          "y": 16.485
+        },
+        {
+          "x": 28.515,
+          "y": 16.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e2-202",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 28.515,
+          "y": 16.485
+        },
+        {
+          "x": 28.515,
+          "y": 11.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-positive-e3-203",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-positive-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 28.5,
+          "y": 11.5
+        },
+        {
+          "x": 33.5,
+          "y": 11.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-positive-e0-204",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-positive-e0"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 33.5,
+          "y": 11.5
+        },
+        {
+          "x": 33.5,
+          "y": 16.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-positive-e1-205",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-positive-e1"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 33.5,
+          "y": 16.5
+        },
+        {
+          "x": 28.5,
+          "y": 16.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-positive-e2-206",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-positive-e2"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 28.5,
+          "y": 16.5
+        },
+        {
+          "x": 28.5,
+          "y": 11.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-positive-e3-207",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-positive-e3"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.455,
+          "y": 53.455
+        },
+        {
+          "x": 16.545,
+          "y": 53.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-208",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.545,
+          "y": 53.455
+        },
+        {
+          "x": 16.545,
+          "y": 58.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-209",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.545,
+          "y": 58.545
+        },
+        {
+          "x": 11.455,
+          "y": 58.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-210",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.455,
+          "y": 58.545
+        },
+        {
+          "x": 11.455,
+          "y": 53.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-211",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.485,
+          "y": 53.485
+        },
+        {
+          "x": 16.515,
+          "y": 53.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-212",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.515,
+          "y": 53.485
+        },
+        {
+          "x": 16.515,
+          "y": 58.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-213",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.515,
+          "y": 58.515
+        },
+        {
+          "x": 11.485,
+          "y": 58.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-214",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.485,
+          "y": 58.515
+        },
+        {
+          "x": 11.485,
+          "y": 53.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-215",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.515,
+          "y": 53.515
+        },
+        {
+          "x": 16.485,
+          "y": 53.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-216",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.485,
+          "y": 53.515
+        },
+        {
+          "x": 16.485,
+          "y": 58.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-217",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.485,
+          "y": 58.485
+        },
+        {
+          "x": 11.515,
+          "y": 58.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-218",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.515,
+          "y": 58.485
+        },
+        {
+          "x": 11.515,
+          "y": 53.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-219",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.545,
+          "y": 53.545
+        },
+        {
+          "x": 16.455,
+          "y": 53.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-220",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.455,
+          "y": 53.545
+        },
+        {
+          "x": 16.455,
+          "y": 58.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-221",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.455,
+          "y": 58.455
+        },
+        {
+          "x": 11.545,
+          "y": 58.455
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-222",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.545,
+          "y": 58.455
+        },
+        {
+          "x": 11.545,
+          "y": 53.545
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-223",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.485,
+          "y": 53.485
+        },
+        {
+          "x": 16.515,
+          "y": 53.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-224",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.515,
+          "y": 53.485
+        },
+        {
+          "x": 16.515,
+          "y": 58.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-225",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.515,
+          "y": 58.515
+        },
+        {
+          "x": 11.485,
+          "y": 58.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-226",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.485,
+          "y": 58.515
+        },
+        {
+          "x": 11.485,
+          "y": 53.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-227",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.515,
+          "y": 53.515
+        },
+        {
+          "x": 16.485,
+          "y": 53.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e0-228",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.485,
+          "y": 53.515
+        },
+        {
+          "x": 16.485,
+          "y": 58.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e1-229",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 16.485,
+          "y": 58.485
+        },
+        {
+          "x": 11.515,
+          "y": 58.485
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e2-230",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 11.515,
+          "y": 58.485
+        },
+        {
+          "x": 11.515,
+          "y": 53.515
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-p1-negative-e3-231",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "pad-p1-negative-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 11.5,
+          "y": 53.5
+        },
+        {
+          "x": 16.5,
+          "y": 53.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-negative-e0-232",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-negative-e0"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 16.5,
+          "y": 53.5
+        },
+        {
+          "x": 16.5,
+          "y": 58.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-negative-e1-233",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-negative-e1"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 16.5,
+          "y": 58.5
+        },
+        {
+          "x": 11.5,
+          "y": 58.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-negative-e2-234",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-negative-e2"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 11.5,
+          "y": 58.5
+        },
+        {
+          "x": 11.5,
+          "y": 53.5
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-pad-dielectric-negative-e3-235",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "pad-dielectric-negative-e3"
+      },
+      "layer": "global"
+    }
+  ]
+}

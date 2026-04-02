@@ -80,6 +80,63 @@ export class laser_processing extends Document {
 
 }
 
+export class dispenser_settings extends Document {
+    @Prop()
+    speed: number;
+
+    @Prop()
+    temperature: number;
+
+    @Prop()
+    actuator_pressure: number;
+
+    @Prop()
+    cartridge_pressure: number;
+
+    @Prop()
+    open_time: number;
+
+    @Prop()
+    dot_distance: number;
+}
+
+export class dispenser_log extends Document {
+    @Prop()
+    start_date: Date;
+
+    @Prop()
+    finish_date: Date;
+
+    @Prop()
+    status: string;
+
+    @Prop({ type: String, default: null })
+    error_message: string | null;
+
+    @Prop()
+    actuator_pressure_mean: number;
+
+    @Prop()
+    cartridge_pressure_mean: number;
+
+    @Prop()
+    temperature_mean: number;
+}
+
+export class dispenser_processing extends Document {
+    @Prop()
+    finished: boolean;
+
+    @Prop()
+    processing_date: Date;
+
+    @Prop({ type: [dispenser_settings] })
+    dispenser_settings: dispenser_settings[];
+
+    @Prop({ type: [dispenser_log] })
+    dispenser_log: dispenser_log[];
+}
+
 export class dielectric_print_job extends Document {
     @Prop()
     jobId: string;
@@ -152,6 +209,9 @@ export class ModuleBatch{
 
     @Prop()
     laser_processing?: laser_processing;
+
+    @Prop()
+    dispenser_processing?: dispenser_processing;
 
     @Prop({ default: [] })
     dielectric_print_job?: dielectric_print_job;

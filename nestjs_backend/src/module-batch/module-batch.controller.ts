@@ -21,6 +21,11 @@ export class ModuleBatchController {
     return this.moduleBatchService.findAll();
   }
 
+  @Get('by-batch-id/:batchId')
+  async getByCustomBatchId(@Param('batchId') batchId: string): Promise<ModuleBatch[]> {
+    return this.moduleBatchService.findByCustomBatchId(batchId);
+  }
+
   @Get(':id')
   async findOne(@Param('id') id: string){
     console.log("in module_order GET ${id}")
