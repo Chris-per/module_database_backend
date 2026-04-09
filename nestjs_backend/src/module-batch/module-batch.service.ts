@@ -31,13 +31,76 @@ export class ModuleBatchService {
   }
 
   async update(id: string, updateMongoItemDto: UpdateModuleBatchDto) {
-    const updated = await this.orderModel.findByIdAndUpdate(
-      id,
-      updateMongoItemDto,
-      { new: true, runValidators: true }
-    ).exec();
+    const { laser_processing, dispenser_processing, dielectric_print_job, ...otherFields } = updateMongoItemDto as any;
+
+    const updateOps: any = {};
+
+    // Apply non-process-log fields via $set
+    if (Object.keys(otherFields).length > 0) {
+      updateOps.$set = otherFields;
+    }
+
+    // Convert incoming process data into process_log entries and $push them
+    const newEntries: any[] = [];
+
+    if (laser_processing) {
+      const ts = laser_processing.processing_date
+        ? new Date(laser_processing.processing_date)
+        : new Date();
+      newEntries.push({
+        entry_key: `laser_${this.formatTimestampKey(ts)}`,
+        machine_type: 'laser',
+        timestamp: ts,
+        laser_settings: laser_processing.laser_settings,
+        laser_log: laser_processing.laser_log,
+      });
+    }
+
+    if (dispenser_processing) {
+      const ts = dispenser_processing.processing_date
+        ? new Date(dispenser_processing.processing_date)
+        : new Date();
+      newEntries.push({
+        entry_key: `dispenser_${this.formatTimestampKey(ts)}`,
+        machine_type: 'dispenser',
+        timestamp: ts,
+        dispenser_settings: dispenser_processing.dispenser_settings,
+        dispenser_log: dispenser_processing.dispenser_log,
+      });
+    }
+
+    if (dielectric_print_job) {
+      const ts = dielectric_print_job.timestamp
+        ? new Date(dielectric_print_job.timestamp)
+        : new Date();
+      newEntries.push({
+        entry_key: `dielectric_${this.formatTimestampKey(ts)}`,
+        machine_type: 'dielectric',
+        timestamp: ts,
+        dielectric_data: dielectric_print_job,
+      });
+    }
+
+    if (newEntries.length > 0) {
+      updateOps.$push = { process_log: { $each: newEntries } };
+    }
+
+    if (Object.keys(updateOps).length === 0) {
+      return this.orderModel.findById(id).exec();
+    }
+
+    const updated = await this.orderModel.findByIdAndUpdate(id, updateOps, { new: true }).exec();
     console.log('Updated object:', updated);
     return updated;
+  }
+
+  /** Formats a Date as "YYYY-MM-DD.HH:mm.SSS" for use in process_log entry keys. */
+  private formatTimestampKey(date: Date): string {
+    const pad = (n: number, len = 2) => n.toString().padStart(len, '0');
+    return (
+      `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}` +
+      `.${pad(date.getHours())}:${pad(date.getMinutes())}.${pad(date.getMilliseconds(), 3)}`
+    );
   }
 
   async remove(id: string) {

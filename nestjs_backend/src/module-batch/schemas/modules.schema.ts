@@ -154,6 +154,35 @@ export class dielectric_print_job extends Document {
     log: string;
 }
 
+export class process_log_entry extends Document {
+    /** e.g. "laser_2026-04-07.10:25.312" */
+    @Prop({ required: true })
+    entry_key: string;
+
+    /** "laser" | "dispenser" | "dielectric" */
+    @Prop({ required: true })
+    machine_type: string;
+
+    /** ISO timestamp of the processing_date; used for chronological sorting */
+    @Prop({ required: true })
+    timestamp: Date;
+
+    @Prop({ type: [laser_settings] })
+    laser_settings?: laser_settings[];
+
+    @Prop({ type: [laser_log] })
+    laser_log?: laser_log[];
+
+    @Prop({ type: [dispenser_settings] })
+    dispenser_settings?: dispenser_settings[];
+
+    @Prop({ type: [dispenser_log] })
+    dispenser_log?: dispenser_log[];
+
+    @Prop({ type: Object })
+    dielectric_data?: any;
+}
+
 export class module_batch_data extends Document {
 
     @Prop()
@@ -215,6 +244,10 @@ export class ModuleBatch{
 
     @Prop({ default: [] })
     dielectric_print_job?: dielectric_print_job;
+
+    /** Chronological list of all process-log entries (laser, dispenser, dielectric). */
+    @Prop({ type: [process_log_entry], default: [] })
+    process_log: process_log_entry[];
 
     @Prop()
     qr_data?: x_y;
