@@ -1,0 +1,51 @@
+{
+  "batchSize": {
+    "x": 170,
+    "y": 240
+  },
+  "spacingX": 8.5,
+  "spacingY": 10,
+  "addQrToModule": false,
+  "qrXOffset": 0,
+  "qrYOffset": 0,
+  "showModuleNames": false,
+  "fillBatchWithModules": true,
+  "batchfileId": "69808b0ebcf31d6bafd5c45a",
+  "amount": 8,
+  "overlays": [
+    {
+      "blueprintId": "698089f1bcf31d6bafd5c456",
+      "overlayX": 50,
+      "overlayY": 17,
+      "overlayAmountX": 2,
+      "overlayAmountY": 1,
+      "overlaySpacingX": 53,
+      "overlaySpacingY": 51.66,
+      "overlayBatchSize": {
+        "size_x": 5,
+        "size_y": 205
+      },
+      "layer": "Expressmodule_v4_DB_cells_1",
+      "baseName": "Expressmodule_v4_DB_cells"
+    },
+    {
+      "blueprintId": "69808ab4bcf31d6bafd5c458",
+      "overlayX": 3.5,
+      "overlayY": 56,
+      "overlayAmountX": 3,
+      "overlayAmountY": 3,
+      "overlaySpacingX": 52.7,
+      "overlaySpacingY": 59.5,
+      "overlayBatchSize": {
+        "size_x": 45.045,
+        "size_y": 7.135000000000005
+      },
+      "layer": "Expressmodule_v4_DB_test_pattern_2",
+      "baseName": "Expressmodule_v4_DB_test_pattern"
+    }
+  ],
+  "meta": {
+    "name": "express",
+    "savedAt": "2026-04-14T11:29:09.072Z"
+  }
+}

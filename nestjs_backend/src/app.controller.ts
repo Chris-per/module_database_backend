@@ -1,10 +1,16 @@
 import { Body, Controller, Get, HttpException, HttpStatus, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import type { module_data, module_order } from './interface';
+import { BACKEND_VERSION } from './version';
 
 @Controller('api')
 export class AppController {
   constructor(private readonly appService: AppService) {}
+
+  @Get('version')
+  getVersion() {
+    return { version: BACKEND_VERSION };
+  }
 
   // @Get()
   // getOrders(): number[] {

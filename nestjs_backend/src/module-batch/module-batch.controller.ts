@@ -2,6 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/
 import { ModuleBatchService } from './module-batch.service';
 import { CreateModuleBatchDto } from './dto/create-module-batch.dto';
 import { UpdateModuleBatchDto } from './dto/update-module-batch.dto';
+import { QueryBatchDataDto } from './dto/query-batch-data.dto';
 import { ModuleBatch } from './entities/module-batch.entity';
 
 @Controller('module-batch')
@@ -24,6 +25,41 @@ export class ModuleBatchController {
   @Get('by-batch-id/:batchId')
   async getByCustomBatchId(@Param('batchId') batchId: string): Promise<ModuleBatch[]> {
     return this.moduleBatchService.findByCustomBatchId(batchId);
+  }
+
+  /**
+   * POST /module-batch/query
+   *
+   * Returns configurable process data and batch file (blueprint) for a given
+   * batchId or moduleId. All include fields default to true when omitted.
+   *
+   * Body example:
+   * {
+   *   "batchId": "B001",          // or "moduleId": "M001"
+   *   "include": {
+   *     "blueprint": true,
+   *     "batchfile": true,
+   *     "processLog": true,
+   *     "moduleList": false,
+   *     "moduleProcessData": true,
+   *     "moduleIvData": false
+   *   }
+   * }
+   */
+  @Post('query')
+  async queryBatchData(@Body() dto: QueryBatchDataDto): Promise<any> {
+    return this.moduleBatchService.queryBatchData(dto);
+  }
+
+  /**
+   * GET /module-batch/module-scribing/:moduleId
+   *
+   * Returns the scribing objects from the merged batch blueprint that belong to
+   * the given module, with vertices translated back to module-relative coordinates.
+   */
+  @Get('module-scribing/:moduleId')
+  async getModuleScribingObjects(@Param('moduleId') moduleId: string): Promise<any> {
+    return this.moduleBatchService.getModuleScribingObjects(moduleId);
   }
 
   @Get(':id')

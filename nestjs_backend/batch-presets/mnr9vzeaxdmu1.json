@@ -1,0 +1,36 @@
+{
+  "batchSize": {
+    "x": 175,
+    "y": 220
+  },
+  "spacingX": 3,
+  "spacingY": 10,
+  "addQrToModule": false,
+  "qrXOffset": 0,
+  "qrYOffset": 0,
+  "showModuleNames": false,
+  "fillBatchWithModules": true,
+  "svgProjectId": "mnfug78r363v6",
+  "amount": 12,
+  "overlays": [
+    {
+      "blueprintId": "69808ab4bcf31d6bafd5c458",
+      "overlayX": 5,
+      "overlayY": -3.5,
+      "overlayAmountX": 3,
+      "overlayAmountY": 4,
+      "overlaySpacingX": 54,
+      "overlaySpacingY": 58.09,
+      "overlayBatchSize": {
+        "size_x": 45.045,
+        "size_y": 7.135000000000005
+      },
+      "layer": "Expressmodule_v4_DB_test_pattern_1",
+      "baseName": "Expressmodule_v4_DB_test_pattern"
+    }
+  ],
+  "meta": {
+    "name": "et_compact_6x3",
+    "savedAt": "2026-04-09T09:26:39.346Z"
+  }
+}

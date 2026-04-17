@@ -1,0 +1,517 @@
+{
+  "version": 1,
+  "meta": {
+    "savedAt": "2026-04-14T11:40:47.987Z",
+    "name": "testrect"
+  },
+  "workspace": {
+    "canvas": {
+      "width": 150,
+      "height": 100,
+      "gridSpacing": 10,
+      "snapToGrid": true
+    },
+    "pan": {
+      "x": 48.709843094372054,
+      "y": -173.16761565717735
+    },
+    "zoom": 2.660019880468749,
+    "shapes": [
+      {
+        "id": "rect-1776166826806",
+        "label": "Rect 5×5 mm",
+        "vertices": [
+          {
+            "x": 10,
+            "y": 10
+          },
+          {
+            "x": 15,
+            "y": 10
+          },
+          {
+            "x": 15,
+            "y": 15
+          },
+          {
+            "x": 10,
+            "y": 15
+          }
+        ],
+        "color": "#1976d2"
+      }
+    ],
+    "contactPoints": [],
+    "guidingEdges": {
+      "positive": null,
+      "negative": null
+    }
+  },
+  "options": {
+    "contactSize": 4,
+    "contactP1Offset": 0.5,
+    "dividingLineDistance": 2,
+    "deadZone": 2,
+    "monoP1P2Distance": 0.2,
+    "monoP1P3Distance": 0.55,
+    "monoP2Overlap": 0.5,
+    "monoP1P3Overlap": 0.5,
+    "p10Count": 1,
+    "p10Spacing": 0.1,
+    "p11Enabled": true,
+    "p11Count": 1,
+    "p11Spacing": 0.1,
+    "p30Distance": 0.3,
+    "p20Count": 1,
+    "p20Spacing": 0.1,
+    "silverWidth": 0.3,
+    "silverP3Gap": 0.1,
+    "silverFingerGap": 1,
+    "silverFingerDist": 5,
+    "contactAreaSpacing": 1,
+    "nCell": 10,
+    "stdEfficiency": 23,
+    "textSizeMultiplier": 1,
+    "lineWidthMultiplier": 0.1,
+    "gridLineWidthMultiplier": 0.3,
+    "showLengthLabels": true
+  },
+  "display": {
+    "mode": "draw",
+    "showLayer": {
+      "p60": true,
+      "p1": true,
+      "dielectric": true,
+      "p2": true,
+      "p3": true,
+      "silver": true,
+      "activeArea": true,
+      "pads": true
+    },
+    "lineTypes": {
+      "p1": {
+        "label": "P1",
+        "lineWidth": 0.08,
+        "color": "#e65100"
+      },
+      "dielectric": {
+        "label": "Dielectric",
+        "lineWidth": 0.15,
+        "color": "#1565c0"
+      },
+      "p2": {
+        "label": "P2",
+        "lineWidth": 0.08,
+        "color": "#6a1fa2"
+      },
+      "p3": {
+        "label": "P3",
+        "lineWidth": 0.08,
+        "color": "#0097a7"
+      },
+      "p60": {
+        "label": "P60 (cut)",
+        "lineWidth": 0.15,
+        "color": "#d32f2f"
+      },
+      "silver": {
+        "label": "Silver",
+        "lineWidth": 0.45,
+        "color": "#9e9e9e"
+      }
+    }
+  },
+  "assets": {
+    "uploadedSvg": null
+  },
+  "scribingObjects": [
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e0-0",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e1-1",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e2-2",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e3-3",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 10
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e0-4",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e1-5",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e2-6",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-p1-boundary-0-e3-7",
+        "parentId": "",
+        "color": "#e65100",
+        "width": 0.08,
+        "fillColor": "",
+        "label": "p1-boundary-0-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 11
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e0-8",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e0"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 13,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 13
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e1-9",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e1"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 13
+        },
+        {
+          "x": 12,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e2-10",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e2"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_DIELECTRIC",
+      "vertices": [
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 13,
+          "y": 12
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-dielectric-boundary-e3-11",
+        "parentId": "",
+        "color": "#1565c0",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "dielectric-boundary-e3"
+      },
+      "layer": "global"
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15,
+          "y": 10
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-module-boundary-e0-12",
+        "parentId": "",
+        "color": "#d32f2f",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "module-boundary-e0"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 61
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 15,
+          "y": 10
+        },
+        {
+          "x": 15,
+          "y": 15
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-module-boundary-e1-13",
+        "parentId": "",
+        "color": "#d32f2f",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "module-boundary-e1"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 61
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 15,
+          "y": 15
+        },
+        {
+          "x": 10,
+          "y": 15
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-module-boundary-e2-14",
+        "parentId": "",
+        "color": "#d32f2f",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "module-boundary-e2"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 61
+      }
+    },
+    {
+      "type": "SCRIBING_TYPE_LASER",
+      "vertices": [
+        {
+          "x": 10,
+          "y": 15
+        },
+        {
+          "x": 10,
+          "y": 10
+        }
+      ],
+      "editorInfo": {
+        "id": "svg-module-boundary-e3-15",
+        "parentId": "",
+        "color": "#d32f2f",
+        "width": 0.15,
+        "fillColor": "",
+        "label": "module-boundary-e3"
+      },
+      "layer": "global",
+      "settings": {
+        "type": 61
+      }
+    }
+  ]
+}

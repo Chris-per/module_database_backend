@@ -30,6 +30,9 @@ export class laser_settings extends Document {
     line_type: string
 
     @Prop()
+    layer!: string
+
+    @Prop()
     power: number
 
     @Prop()
@@ -45,12 +48,15 @@ export class laser_settings extends Document {
 export class laser_log extends Document {
     @Prop()
     start_date: Date
-    
+
     @Prop()
     finish_date: Date
 
     @Prop()
     line_type: string
+
+    @Prop()
+    layer!: string
 
     @Prop()
     laser_power_start: number

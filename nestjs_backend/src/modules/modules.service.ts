@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateModuleDto, iv_results_dto, Process_data_dto } from './dto/create-module.dto';
 import { UpdateModuleDto } from './dto/update-module.dto';
 import { Modules, ModuleDocument } from './schemas/modules.schema';
-import { Model } from 'mongoose';
+import { Model, isValidObjectId } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
@@ -94,7 +94,14 @@ export class ModulesService {
     }
 
     async findByCustomModuleId(moduleId: string): Promise<Modules[]> {
-      return this.orderModel.find({ module_id: moduleId }).exec();
+      const byField = await this.orderModel.find({ module_id: moduleId }).exec();
+      if (byField.length > 0) return byField;
+      // Fall back to MongoDB _id lookup (QR codes may encode the ObjectId directly)
+      if (isValidObjectId(moduleId)) {
+        const byId = await this.orderModel.find({ _id: moduleId }).exec();
+        if (byId.length > 0) return byId;
+      }
+      return [];
     }
 
     async getProcessDataForOrder(orderId: string): Promise<any[]> {
